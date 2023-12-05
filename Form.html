@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <script src="form.js">    </script>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+table{
+    background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+
+}
+  h2 {
+      text-align: center;
+      color: #333;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  label {
+      margin-bottom: 5px;
+  }
+
+  input {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  #designation{
+    padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  button{
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+    </style>
+    </head>
+    <center>
+    <body>
+        <h1>Loan Calculator</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Employee ID:</td>
+                    <td><input type="text" id="employeeId" required ></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" id="address" required></td>
+                </tr>
+                <tr>
+                    <td>Designation:</td>
+                    <td>
+                        <select id="designation" required>
+                            <option value="Manager">Manager</option>
+                            <option value="Engineer">Engineer</option>
+                            <option value="Analyst">Analyst</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loan Amount:</td>
+                    <td><input type="number" id="loanAmount" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Loan Taken:</td>
+                    <td><input type="date" id="dateOfLoan" required></td>
+                </tr>
+                <tr>
+                    <td>Interest:</td>
+                    <td><input type="number" id="interest" required></td>
+                </tr>
+                <tr>
+                    <td>Maturity Date:</td>
+                    <td><input type="date" id="dateOfLoan" required></td>
+                </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button" onclick="calculateLoan()">Calculate</button>
+                </td>
+            </tr>            
+            </table>
+        </form>
+    </body>
+    </center>
+    </html>
